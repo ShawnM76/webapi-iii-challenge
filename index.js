@@ -1,4 +1,5 @@
 // code away!
+require('dotenv').config();
 const server = require('./server.js');
-const port = 9000;
+const port = process.env.PORT;
 server.listen(port, () => console.log(` \n*** Port is over ${port}!!! ***\n `));
